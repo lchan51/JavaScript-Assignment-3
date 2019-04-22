@@ -44,73 +44,91 @@ return result
 
 //Question 5
 function letterCapitalize(str){
-var str = string.split(" ");
-for(var i=0; i<str.length;i++)
-var result=str[0].toUpperCase() + str[1].splice;
+var words = str.split(" ");
+var result="";
+for(var i=0; i<words.length;i++){
+var firstLetter=words[i].replace(words[i])
+result +=" " +firstLetter
 }
-return result()
+return result.slice(1);
+}
+console.log(letterCapitalize(""))
 
 
 //Question 6
 function simpleReverse(str) {
-  for (var i = str.lenth; i>=0; i--) {
-    return(i);
-  }
+  var strArray=str.splt("")
+  var revArray=strArray.reverse()
 }
+    return revArray.join("")
 
 
 //Question 7
-function findDiff(arr) 
-var largest=arr[a];Math.max(num)
-var smallest = arr [b];Math.min(num)
-return findDiff([arr a- arr b])
-
+function findDiff(arr) {
+var largest=Math.max(...arr);
+var smallest =Math.min(...arr)
+}
+return findDiff([largest-smallest])
 
 //Question 8
 function timeConvert(num) {
-var hours = num/60;
+var hours = parseInt(num/60);
 var minutes = num % 60;
-console.log(hours +":"+ minutes);
-}
+return hour + ":" + minutes}
+console.log(timeConvert);
 
 
 //Question 9
 function findStr(str, long) {
-var length = str.length;
-var answer = 0
-for (var i=0; i<long.length-str.length;i++){
-if (long.slice(i, i+str.length)===str){
-  answer++;
+  var splitArray =long.splt(str);
 }
-}
+  return splitedArray.length -1
+
 
 //Question 10
  function selfDividingNumbers (left, right){
-    var num = []
-    var digits = num.toString().split("");
-    for (var i=0; i<digits.length;i++){
-      if (num %digits[i]===0){
-              [num ++];
-          }    
-          }
+    var solution = []
+    for (var i=left; i<=right;i++){
+      if (isSelfDividing(i)){
+      solution.push(i);
+      }
+      return solution
+    
+  function isSelfDividing(num){
+    var digits =num.toString().split("");
+    for (vari=0; i<digits.length; i++){
+      if (num%digits[i]!==0)
+        return false
+      }
+    }
+        return true
+        console.log(selfDividingNumbers)
+    
     
 //Question 11
   function moveZeros(nums){
   var counter=0;
   var answer=[];
-  for(var i=0; i<nums.length; i++){
-      if(nums[i]===0) {nums.splice(i);
-      nums.push(0)
-      return answer
-          }
+  for(var a=0; a<nums.length; a++){
+      if(nums[a]===0) {counter++;}
+      else {answer.push (nums[a]);
       }
+    for (var b=counter; b>0; b--){
+      answer.push(0)
+    }
+        return answer
+
 
   //Question 12
-  function average(arr) {
-  var total = 0;
-  for (var i = 0; i <arr.length; i++) {
-      total += arr[i];
+  function average(nums) {
+    if (nums.length===0){
+      return 0;
+    }
+    
+    var total = 0
+    for (var i=0;i<nums.length; i++){
+      total += num[i];
+    }
+     return total/nums.length
   }
-  return total /arr.length
-}
-
+     console.log(average[])
